@@ -1,5 +1,13 @@
 function minDate(dates) {
   //write you code here
+	let n = dates.length, index = 0, min=Infinity;
+  for(let i=0;i<n;i++){
+    if(Date.parse(dates[i]<min)){
+      min = Date.parse(dates[i]);
+      index = i;
+    }
+  }
+  return dates[index];
 }
 
 // Do not change the code
